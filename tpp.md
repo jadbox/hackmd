@@ -1,10 +1,21 @@
 # Token Permissioned Pages <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/twitter/259/coin_1fa99.png" height="32"/> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/google/263/bridge-at-night_1f309.png" height="32"/> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/259/globe-with-meridians_1f310.png" height="32"/>
 
-*What's this about?*
+*A better model for monetizing online content anywhere on the Internet using token ownership.*
 
-If you observe Patreon, the act of subcribing to a creator gives you access to private content they post on platform. Perhaps we can give creators an even more powerful platform- the ability to directly own their own subscribtions via crypto token ownership, and be able to permission gate any content on the Internet (be it in the cloud, self-hosted, or decentralized swarms).  
+## What's this about?
 
-The Token Permissioned Pages platform [TPP] is a special reverse proxy that acts like an authorization gateway that gates by token balance requirement to Internet webpages. In other words, it's a paywall over any unlisted webcontent, but only requires token ownership rather requiring a transaction for access. By just requiring token ownership for access, it reduces gas costs and requires transaction-free minimal effort on the user to access web content.
+
+Token permission pages allow creators to display their content only to consumers who hold a sufficient balance of the creator’s personal token.  
+
+In contrast to the traditional content selling models (where consumers pay creators with a cash or crypto transaction), token permission pages simply require consumers to hold some minimum quantity of the creators personal token.  This incentivizes long term holding of personal tokens, which creates an investor-investee relationship between creators and consumers. 
+
+Token permissioning can be applied to any webpage, breaking creators free of walled garden platforms like Patreon and OnlyFans.
+
+By just requiring token ownership for access, it reduces gas costs and requires transaction-free minimal effort on the user to access web content. 
+
+**How it works:**
+
+The Token Permissioned Pages platform [TPP] is a special reverse proxy that acts like an authorization gateway that gates by a minimum token balance to gain access to Internet content (hosted anywhere). The TPP platform has fully built-in support for many types of crypto wallets for verifying token ownership.
 
 ## ⚡ Use-cases
 
@@ -17,14 +28,20 @@ The Token Permissioned Pages platform [TPP] is a special reverse proxy that acts
 
 
 ## 👯 Compatibility
-* Any ERC-20 token is supported
+
+### Tokens
+* Any [ERC-20](https://cointelegraph.com/explained/erc-20-tokens-explained) token is supported
 * ERC-721 is not supported (yet!)
-* Supported wallets
-  * Metamask
-  * Wallet Connect
-  * Roll
-  * Coinbase wallet
-* IPFS links are only supported via ipfs http gateways. Native IPFS support is on the roadmap.
+
+### Supported user wallets
+*For verifying with the user's web3 wallet to validate token access to source link content*
+* Metamask
+* Wallet Connect
+* Roll
+* Coinbase wallet
+### Link Addresses
+* Currently both the source url and TPP shared link are limtied to HTTP protocol only. We're in the process of investigating future HTTPS support.
+* IPFS links are only supported via an [IPFS HTTP gateway](https://developers.cloudflare.com/distributed-web/ipfs-gateway/browsing-ipfs/). Native IPFS support is on the roadmap.
 * DAT links are also currently unsupported
 
 ## 📖 Terminology
@@ -35,7 +52,6 @@ The Token Permissioned Pages platform [TPP] is a special reverse proxy that acts
 ## ⭐️ Limitations and notes
 * **Important**: ensure your source URL is blocked from search engines via a robots.txt or *noindex* metatag (https://support.google.com/webmasters/answer/93710?hl=en)
 * User sessions and cookies from the origin will not work that well with the TPP proxy. It's recommended to stick with static pages/spa that do not rely on user sessions.
-* Currently both the source url and TPP shared link are limtied to HTTP protocol only. We're in the process of investigating future HTTPS support.
 
 ## 🏃 Getting Started: generate a link
 
