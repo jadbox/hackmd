@@ -1,4 +1,8 @@
-# <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/twitter/259/coin_1fa99.png" height="28"/> Token Permissioned Pages <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/twitter/259/coin_1fa99.png" height="28"/>
+# Token Permissioned Pages <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/twitter/259/coin_1fa99.png" height="32"/> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/google/263/bridge-at-night_1f309.png" height="32"/> <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/259/globe-with-meridians_1f310.png" height="32"/>
+
+*What's this about?*
+
+If you observe Patreon, the act of subcribing to a creator gives you access to private content they post on platform. Perhaps we can give creators an even more powerful platform- the ability to directly own their own subscribtions via crypto token ownership, and be able to permission gate any content on the Internet (be it in the cloud, self-hosted, or decentralized swarms).  
 
 The Token Permissioned Pages platform [TPP] is a special reverse proxy that acts like an authorization gateway that gates by token balance requirement to Internet webpages. In other words, it's a paywall over any unlisted webcontent, but only requires token ownership rather requiring a transaction for access. By just requiring token ownership for access, it reduces gas costs and requires transaction-free minimal effort on the user to access web content.
 
@@ -20,6 +24,8 @@ The Token Permissioned Pages platform [TPP] is a special reverse proxy that acts
   * Wallet Connect
   * Roll
   * Coinbase wallet
+* IPFS links are only supported via ipfs http gateways. Native IPFS support is on the roadmap.
+* DAT links are also currently unsupported
 
 ## 📖 Terminology
 
